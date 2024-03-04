@@ -5,7 +5,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainSceneController">
    <children>
       <Button fx:id="TellerBtn" layoutX="230.0" layoutY="138.0" mnemonicParsing="false" onAction="#TellerBtnClicked" prefHeight="31.0" prefWidth="141.0" text="Teller">
@@ -28,5 +27,6 @@
             <Font size="24.0" />
          </font>
       </Label>
+      <Button layoutX="59.0" layoutY="211.0" mnemonicParsing="false" text="TestChange" />
    </children>
 </AnchorPane>
