@@ -27,6 +27,5 @@
             <Font size="24.0" />
          </font>
       </Label>
-      <Button layoutX="46.0" layoutY="168.0" mnemonicParsing="false" text="TestButton" />
    </children>
 </AnchorPane>
