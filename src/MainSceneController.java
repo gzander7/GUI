@@ -1,5 +1,4 @@
 import java.io.IOException;
-
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -33,6 +32,7 @@ public class MainSceneController {
         scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
+        System.out.println("Customer Button Clicked");
     }
 
     // This method is used to switch to the Manager scene
@@ -43,6 +43,7 @@ public class MainSceneController {
         scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
+        System.out.println("Manager Button Clicked");
     }
 
     // This method is used to switch to the Teller scene
@@ -53,6 +54,47 @@ public class MainSceneController {
         scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
+        System.out.println("Teller Button Clicked");
+    }
+
+    @FXML
+    void PaperDepositBtnClicked(ActionEvent event) throws Exception {
+        root = FXMLLoader.load(getClass().getResource("PaperDeposit.fxml"));
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+        System.out.println("Paper Deposit Button Clicked");
+    }
+
+    @FXML
+    void insertCardBtnClicked(ActionEvent event) throws Exception {
+        root = FXMLLoader.load(getClass().getResource("CustomerSelectPayment.fxml"));
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+        System.out.println("Insert Card Button Clicked");
+    }
+
+    @FXML
+    void creditCardBtnClicked(ActionEvent event) throws Exception {
+        root = FXMLLoader.load(getClass().getResource("CreditCard.fxml"));
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+        System.out.println("Credit Card Button Clicked");
+    }
+
+    @FXML
+    void ATMCardBtnClicked(ActionEvent event) throws Exception {
+        root = FXMLLoader.load(getClass().getResource("VerifyPin.fxml"));
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+        System.out.println("Debit Card Button Clicked");
     }
 
     // This method is used to switch back to the main scene
@@ -63,6 +105,7 @@ public class MainSceneController {
         scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
+        System.out.println("Back Button Clicked");
     }
 
 }

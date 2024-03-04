@@ -8,6 +8,10 @@ public class App extends Application {
     @Override
     public void start(Stage primaryStage) {
         try {
+            primaryStage.setOnCloseRequest(event -> {
+                System.out.println("Exiting program...");
+            });
+
             Parent root = FXMLLoader.load(getClass().getResource("MainScene.fxml"));
             Scene scene = new Scene(root);
 
@@ -18,7 +22,6 @@ public class App extends Application {
         } catch (Exception e) {
 
         }
-
     }
 
     public static void main(String[] args) {
