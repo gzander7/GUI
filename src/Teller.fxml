@@ -16,7 +16,7 @@
       <Button layoutX="262.0" layoutY="315.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="77.0" text="Transfer" />
       <TextArea layoutX="30.0" layoutY="140.0" prefHeight="130.0" prefWidth="149.0" />
       <Text layoutX="30.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Checking Accounts" underline="true" />
-      <Button layoutX="265.0" layoutY="52.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="128.0" text="Search Customer ID" />
-      <Text layoutX="382.0" layoutY="165.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Type in the customer ID and select the account you want to transfer from and click Transfer which should redirect to a new window?" wrappingWidth="138.775390625" />
+      <Button fx:id="SearchCustomerID" layoutX="265.0" layoutY="52.0" mnemonicParsing="false" onAction="#SearchCustomerID" prefHeight="25.0" prefWidth="128.0" text="Search Customer ID" />
+      <Text layoutX="32.0" layoutY="292.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Type in the customer ID and select the account you want to transfer from and click Transfer which should redirect to a new window?" wrappingWidth="138.775390625" />
    </children>
 </AnchorPane>
