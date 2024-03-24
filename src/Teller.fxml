@@ -9,14 +9,18 @@
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainSceneController">
    <children>
       <Button fx:id="backBtn" layoutX="262.0" layoutY="346.0" mnemonicParsing="false" onAction="#switchToMainScene" prefHeight="25.0" prefWidth="77.0" text="Back" />
-      <TextField layoutX="101.0" layoutY="52.0" />
-      <Text layoutX="14.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer ID:" />
-      <TextArea layoutX="190.0" layoutY="140.0" prefHeight="130.0" prefWidth="149.0" />
-      <Text layoutX="190.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Savings Accounts" underline="true" />
+      <TextField layoutX="96.0" layoutY="31.0" />
+      <Text layoutX="20.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer ID:" />
+      <TextArea layoutX="417.0" layoutY="160.0" prefHeight="130.0" prefWidth="149.0" />
+      <Text layoutX="446.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Savings Accounts" underline="true" />
       <Button layoutX="262.0" layoutY="315.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="77.0" text="Transfer" />
-      <TextArea layoutX="30.0" layoutY="140.0" prefHeight="130.0" prefWidth="149.0" />
-      <Text layoutX="30.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Checking Accounts" underline="true" />
-      <Button fx:id="SearchCustomerID" layoutX="265.0" layoutY="52.0" mnemonicParsing="false" onAction="#SearchCustomerID" prefHeight="25.0" prefWidth="128.0" text="Search Customer ID" />
-      <Text layoutX="32.0" layoutY="292.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Type in the customer ID and select the account you want to transfer from and click Transfer which should redirect to a new window?" wrappingWidth="138.775390625" />
+      <TextArea layoutX="38.0" layoutY="160.0" prefHeight="130.0" prefWidth="149.0" />
+      <Text layoutX="62.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Checking Accounts" underline="true" />
+      <Button fx:id="SearchCustomerID" layoutX="262.0" layoutY="31.0" mnemonicParsing="false" onAction="#SearchCustomerID" prefHeight="25.0" prefWidth="128.0" text="Search Customer ID" />
+      <Button layoutX="262.0" layoutY="67.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="128.0" text="Create New Account" />
+      <Button layoutX="417.0" layoutY="31.0" mnemonicParsing="false" onAction="#CreateNewCustomer" prefHeight="25.0" prefWidth="139.0" text="Create New Customer" />
+      <Button layoutX="417.0" layoutY="67.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="139.0" text="Link Accounts" />
+      <Button layoutX="231.0" layoutY="213.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="149.0" text="Withdraw from Account" />
+      <Button layoutX="250.0" layoutY="168.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="101.0" text="Stop Payment" textFill="RED" />
    </children>
 </AnchorPane>

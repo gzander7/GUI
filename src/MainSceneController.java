@@ -116,5 +116,14 @@ public class MainSceneController {
         stage.show();
         System.out.println("Seach Customer ID Button Clicked");
     }
+    @FXML
+    void CreateNewCustomer(ActionEvent event) throws Exception {
+        root = FXMLLoader.load(getClass().getResource("CreateNewCustomer.fxml"));
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+        System.out.println("Create New Customer Button Clicked");
+    }
 
 }
