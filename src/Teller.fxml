@@ -11,16 +11,14 @@
       <Button fx:id="backBtn" layoutX="262.0" layoutY="346.0" mnemonicParsing="false" onAction="#switchToMainScene" prefHeight="25.0" prefWidth="77.0" text="Back" />
       <TextField layoutX="96.0" layoutY="31.0" />
       <Text layoutX="20.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer ID:" />
-      <TextArea layoutX="417.0" layoutY="160.0" prefHeight="130.0" prefWidth="149.0" />
-      <Text layoutX="446.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Savings Accounts" underline="true" />
       <Button layoutX="262.0" layoutY="315.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="77.0" text="Transfer" />
-      <TextArea layoutX="38.0" layoutY="160.0" prefHeight="130.0" prefWidth="149.0" />
-      <Text layoutX="62.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Checking Accounts" underline="true" />
+      <TextArea layoutX="38.0" layoutY="160.0" prefHeight="130.0" prefWidth="149.0" promptText="Display multiple Accounts and their balance" />
+      <Text layoutX="88.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Accounts" underline="true" />
       <Button fx:id="SearchCustomerID" layoutX="262.0" layoutY="31.0" mnemonicParsing="false" onAction="#SearchCustomerID" prefHeight="25.0" prefWidth="128.0" text="Search Customer ID" />
       <Button layoutX="262.0" layoutY="67.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="128.0" text="Create New Account" />
       <Button layoutX="417.0" layoutY="31.0" mnemonicParsing="false" onAction="#CreateNewCustomer" prefHeight="25.0" prefWidth="139.0" text="Create New Customer" />
       <Button layoutX="417.0" layoutY="67.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="139.0" text="Link Accounts" />
-      <Button layoutX="231.0" layoutY="213.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="149.0" text="Withdraw from Account" />
+      <Button layoutX="231.0" layoutY="213.0" mnemonicParsing="false" onAction="#MakeWithdraw" prefHeight="25.0" prefWidth="149.0" text="Withdraw from Account" />
       <Button layoutX="250.0" layoutY="168.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="101.0" text="Stop Payment" textFill="RED" />
    </children>
 </AnchorPane>

@@ -107,6 +107,7 @@ public class MainSceneController {
         stage.show();
         System.out.println("Back Button Clicked");
     }
+    //Search Customer field, not working yet, if customer is not found  then the ErrorCustomerID will be displayed
     @FXML
     public void SearchCustomerID(ActionEvent event) throws IOException{
         root = FXMLLoader.load(getClass().getResource("ErrorCustomerID.fxml"));
@@ -116,6 +117,7 @@ public class MainSceneController {
         stage.show();
         System.out.println("Seach Customer ID Button Clicked");
     }
+    //Opens a new window to createa  new customer with all the data fields
     @FXML
     void CreateNewCustomer(ActionEvent event) throws Exception {
         root = FXMLLoader.load(getClass().getResource("CreateNewCustomer.fxml"));
@@ -125,5 +127,16 @@ public class MainSceneController {
         stage.show();
         System.out.println("Create New Customer Button Clicked");
     }
+    //Opens a new  Window to Withdraw from selected account to selcted account
+    @FXML
+    void MakeWithdraw(ActionEvent event) throws Exception {
+        root = FXMLLoader.load(getClass().getResource("WithdrawFromTo.fxml"));
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+        System.out.println("Withdraw Account Button Clicked");
+    }
+    
 
 }
