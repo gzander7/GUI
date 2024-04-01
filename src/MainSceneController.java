@@ -128,6 +128,51 @@ public class MainSceneController {
         System.out.println("ID was successful and Options are displayed");
     }
     @FXML
+    void DisplayRecentDebits(ActionEvent event) throws IOException{
+        root = FXMLLoader.load(getClass().getResource("RecentDebitsTeller.fxml"));
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+        System.out.println("Display Recent Debits Button Clicked");
+    }
+    @FXML
+    void CreditAccount(ActionEvent event) throws IOException{
+        root = FXMLLoader.load(getClass().getResource("CreditAccountTeller.fxml"));
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+        System.out.println("Credit Account Button Clicked");
+    }
+    @FXML
+    void DebitAccount(ActionEvent event) throws IOException{
+        root = FXMLLoader.load(getClass().getResource("DebitAccountTeller.fxml"));
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+        System.out.println("Debit Account Button Clicked");
+    }
+    @FXML
+    void Transfer(ActionEvent event) throws IOException{
+        root = FXMLLoader.load(getClass().getResource("WithdrawFromTo.fxml"));
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+        System.out.println("Transfer Money Button Clicked");
+    }
+    @FXML
+    void AccountBalance(ActionEvent event) throws IOException{
+        root = FXMLLoader.load(getClass().getResource("AccountBalanceTeller.fxml"));
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+        System.out.println("Account balance Button Clicked");
+    }
+    @FXML
     void AccountStatusDisplayed(ActionEvent event) throws IOException{
         root = FXMLLoader.load(getClass().getResource("AccountStatusDisplayed.fxml"));
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
